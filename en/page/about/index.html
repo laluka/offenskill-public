@@ -512,7 +512,7 @@ Hugo makes use of a variety of open source projects including:
   const darkStorage = localStorage.getItem('darkmode');
   const isBrowserDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  if (!darkStorage && isBrowserDark) {
+  if (!darkStorage) {
     document.documentElement.classList.add('dark');
   }
 
